@@ -1,0 +1,127 @@
+:root {
+  --color-primary:          #c2410c;  /* Brand orange-red */
+  --color-primary-content:  #ffffff;  /* Text on primary background */
+  --color-secondary:        #6b7280;  /* Muted gray text */
+  --color-neutral:          #3f3f46;  /* Dark sections (footer, bars) */
+  --color-neutral-content:  #f4f4f5;  /* Text on dark backgrounds */
+  --color-base-100:         #fff8f1;  /* Warm white page background */
+  --color-base-200:         #f5ede5;  /* Slightly darker warm white */
+  --color-base-300:         #e7d9c9;  /* Borders and dividers */
+  --color-base-content:     #2d1b10;  /* Default dark text */
+  --color-error:            #ef4444;  /* Red for error states */
+  --color-success:          #22c55e;  /* Green for success states */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-primary-content);
+    color: var(--color-base-content);
+}
+
+
+.bg-primary-brand {
+  background-color: var(--color-primary) !important;
+}
+
+.bg-neutral {
+  background-color: var(--color-neutral) !important;
+}
+
+.bg-base-100 {
+  background-color: var(--color-base-100) !important;
+}
+
+.bg-base-200 {
+  background-color: var(--color-base-200) !important;
+}
+
+.text-primary-brand {
+  color: var(--color-primary) !important;
+}
+
+.text-muted-brand {
+  color: var(--color-secondary) !important;
+}
+
+.text-dark-brand {
+  color: var(--color-base-content) !important;
+}
+
+.text-neutral-content {
+  color: var(--color-neutral-content) !important;
+}
+
+.border-base {
+  border-color: var(--color-base-300) !important;
+}
+
+.mw-400 {
+  max-width: 400px;
+}
+
+.mw-420 {
+  max-width: 420px;
+}
+
+.mw-600 {
+  max-width: 600px;
+}
+
+.mw-700 {
+  max-width: 700px;
+}
+
+.mw-750 {
+  max-width: 750px;
+}
+
+.mw-1000 {
+  max-width: 1000px;
+}
+
+.navbar-cravings {
+  background-color: var(--color-primary);
+  min-height: 64px;
+  padding: 0 24px;
+}
+
+.navbar-logo {
+  height: 56px;
+  width:  100%;
+  object-fit: contain;
+}
+
+.nav-links a {
+  /* color: var(--color-primary-content); */
+  text-decoration: none;
+}
+
+.navbar-login-link{
+    color: var(--color-primary-content);
+    padding: 6px 12px;
+  }
+
+.navbar-login-link:hover {
+  border: 1px solid var(--color-primary-content);
+  border-radius: 4px;
+}
+
+.btn-register-pill {
+  color: #c2410c;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 15px;
+  background: var(--color-primary-content);
+}
+
+.btn-register-pill:hover {
+  background: #c2410c;
+  color: var(--color-neutral-content);
+  border: 1px solid #fff;
+}
