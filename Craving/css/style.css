@@ -125,3 +125,110 @@ body{
   color: var(--color-neutral-content);
   border: 1px solid #fff;
 }
+
+.hero-section {
+  min-height: 89vh;
+  background-image: url('../images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.42);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0 16px;
+  width: 100%;
+}
+
+.hero-content h1 {
+  font-size: clamp(1.3rem,5vw, 2.8rem);
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--color-primary-content);
+}
+
+.hero-content .hero-sub {
+  color: var(--color-primary-content);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.btn-hero-primary {
+  background-color: var(--color-primary);
+  color: var(--color-primary-content);
+  font-weight:500;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 32px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-hero-primary:hover {
+  background-color: #c2400c;
+  opacity: 0.9;
+  color: var(--color-primary-content);
+}
+
+.btn-hero-secondary {
+  background-color: var(--color-primary-content);
+  color: var(--color-base-content);
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 32px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-hero-secondary:hover {
+  background-color:  var(--color-base-100);
+  color: var(--color-base-content);
+}
+
+.hero-search {
+  max-width: 850px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero-search .input-group {
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--color-base-100);
+}
+
+.hero-search .input-group-text {
+  background: var(--color-base-100);
+  border: none;
+  padding-left: 18px;
+  color: var(--color-error);
+}
+
+.hero-search .form-control {
+  background: #fff8f0;
+  border: none;
+  padding: 14px 16px;
+  font-size: 1rem;
+}
+
+.hero-search .form-control::placeholder {
+  color: var(--color-error);
+  opacity: 0.6;
+}
+
+.hero-search .form-control:focus {
+  box-shadow: none;
+}
