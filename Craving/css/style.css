@@ -624,7 +624,7 @@ body {
 
 .footer {
   background: #3f4247;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .tagline {
@@ -635,15 +635,15 @@ body {
 
 
 .logo-circle {
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   border-radius: 100%;
 }
 
 .logo-circle img {
   margin-bottom: 35px;
   margin-right: 10px;
-  width: 150px;
+  width: 130px;
 }
 
 .footer-col h4 {
@@ -666,29 +666,44 @@ body {
 }
 
 .divider {
+  width: 1150px;
   margin-bottom: 10px;
   border-top: 2px solid #dcdcdc;
   opacity: 0.9;
 }
 
 .bottom-bar {
+  max-width: 1150px;
   font-size: 14px;
   color: #cfcfcf;
 }
 
 .footer-container {
-  max-width: 1200px;
+  max-width: 1150px;
+  font-weight: 200;
 }
 
 @media(max-width:768px) {
 
   .logo-section {
-    justify-content: center !important;
+    justify-content: center;
     margin-bottom: 10px;
   }
 
+  .logo-circle img{
+    margin-right: 540px;
+  }
+
+  .row{
+    display: flex;
+    flex-direction: column;
+  }
   .footer-col {
-    text-align: center;
+    text-align: start;
+  }
+
+  .divider{
+    max-width: 750px;
   }
 
   .bottom-bar {
@@ -1148,11 +1163,8 @@ body {
 
 .hc-section-label {
   font-size: 13px;
-
   letter-spacing: 1px;
-
   margin-bottom: 15px;
-
   color: #d5d5d5;
 }
 
@@ -1169,19 +1181,15 @@ body {
 }
 
 .hc-faq-icon {
-
   margin-right: 10px;
 }
 
 .hc-faq-plus {
-
   opacity: 0.8;
 }
 
 .hc-vdivider {
-
   width: 1px;
-
   background: rgb(255, 255, 255);
 }
 
@@ -1219,6 +1227,22 @@ body {
 
 .hc-submit-btn:hover {
   background: #a63f0e;
+}
+
+
+@media (max-width: 767px) {
+    .hc-body { flex-direction: column; }
+    .hc-left, .hc-right { flex: unset; padding: 24px 20px; }
+    .hc-vdivider { width: auto; height: 1px; margin: 0 20px; }
+    .hc-header { padding: 28px 20px 18px; }
+    .hc-title { font-size: 1.6rem; }
+    .hc-card { max-width: 100%; }
+}
+
+@media (max-width: 480px) {
+    .hc-bg { padding: 20px 10px; }
+    .hc-title { font-size: 1.35rem; }
+    .hc-left, .hc-right { padding: 18px 14px; }
 }
 
 .contact-bg {
